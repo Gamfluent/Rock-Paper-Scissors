@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: hsl(0, 0%, 10%);
+    overflow: hidden;
+}
+
+.title-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+p {
+    color: white;
+    font-size: 40px;
+    margin-top: 200px;
+}
+
+@keyframes increaseSize {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.increase {
+    animation: increaseSize 0.5s ease forwards;
+}
+
+#lost {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    z-index: 9999;
+    border-radius: 20px;
+    display:none;
+}
+
+
+.button-container {
+    background-color: hsl(0, 0%, 10%);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 20px;
+    background-color: hsl(210, 100%, 50%);
+    box-shadow: 0 0 30px 5px hsl(210, 100%, 20%);
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    transition: font-size 0.3s ease, box-shadow 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.button:hover{
+    width: 110px;
+    height: 110px;
+    font-size:60px;
+    box-shadow: 0 0 40px 15px hsl(210, 100%, 30%);
+}
+

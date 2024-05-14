@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title-container">
+        <h1 id="title">Rock Paper Scissors</h1>
+
+        <p id="state-display">Choose your move: </p>
+    </div>
+
+    <img id="lost" src="You Lost.png"/>
+    
+    <div class="button-container">
+        <button onclick="PlayerMove('rock')" class="button" id="rock">✊</button>
+        <button onclick="PlayerMove('paper')" class="button" id="paper">✋</button>
+        <button onclick="PlayerMove('scissors')" class="button" id="scissors">✌️</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
