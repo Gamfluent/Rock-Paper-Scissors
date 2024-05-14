@@ -20,15 +20,15 @@ const RobotMove = () => {
     let random = Math.floor(Math.random() * 3);
     console.log(random);
 
-    robotMove = 'paper';
+    //robotMove = 'paper';
 
-    /* if (random === 0) {
+    if (random === 0) {
         robotMove = "rock";
     } else if (random === 1) {
         robotMove = "paper";
     } else {
         robotMove = "scissors";
-    } */
+    }
     
     gameStateDisplay.innerHTML = "Robot is thinking...";
 
