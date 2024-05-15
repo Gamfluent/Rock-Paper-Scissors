@@ -5,7 +5,7 @@ let robotMove = "";
 
 let gameStateDisplay = document.getElementById('state-display');
 
-let audio = new Audio('Cat Laughing At You.mp3');
+let audio = new Audio('sound.mp3');
 let lostImage = document.getElementById("lost");
 
 audio.addEventListener('ended', function() {
