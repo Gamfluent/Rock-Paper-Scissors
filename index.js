@@ -21,16 +21,9 @@ const RobotMove = () => {
     console.log(random);
 
     //robotMove = 'paper';
+    moves = ["rock", "paper", "scissors"];
 
-    if (random === 0) {
-        robotMove = "rock";
-    } else if (random === 1) {
-        robotMove = "paper";
-    } else {
-        robotMove = "scissors";
-    }
-    
-    gameStateDisplay.innerHTML = "Robot is thinking...";
+    robotMove = moves[random];
 
     setTimeout(() => {
         gameStateDisplay.innerHTML = `Robot chose: ${robotMove}`;
@@ -44,6 +37,8 @@ const RobotMove = () => {
                 buttons.forEach(button => {
                     button.disabled = false;
                 }); 
+
+                gameStateDisplay.innerHTML = "Choose you move: ";
             }, 1000)
         }, 1000)
     }, 2000)
@@ -72,7 +67,7 @@ const PlayerMove = (move) => {
     playerMove = move;
     console.log(playerMove);
 
-     const buttons = document.querySelectorAll("button");
+    const buttons = document.querySelectorAll("button");
     buttons.forEach(button => {
         button.disabled = true;
     }); 
@@ -86,11 +81,6 @@ const lost = () => {
     lostImage.style.display = 'block';
 
     PlayIncreaseAnimation();
-
-    /* lostImage.classList.add('increase');
-    setTimeout(() => {
-        lostImage.classList.remove('increase');
-    }, 500);  */
 }
 
 const PlayIncreaseAnimation = () => {
